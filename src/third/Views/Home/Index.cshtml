@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "MS Health API";
+}
+
+@model third.Services.Profile
+@inject third.Services.IHealthService HealthSvc
+
+<div>
+    <p>Hello @Model.FirstName @Model.LastName !!</p>
+    <p>Height: @Model.Height</p> 
+    <p>Weight: @Model.Weight</p>
+
+    <button id="healthSummary">Get Health Summary</button>
+</div>
